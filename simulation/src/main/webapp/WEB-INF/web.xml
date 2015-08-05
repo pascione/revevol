@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>Index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Log</display-name>
+    <servlet-name>Log</servlet-name>
+    <servlet-class>com.revevol.simulation.Servlet.Log</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Log</servlet-name>
+    <url-pattern>/Log</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Simulator</display-name>
+    <servlet-name>Simulator</servlet-name>
+    <servlet-class>com.revevol.simulation.Servlet.Simulator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Simulator</servlet-name>
+    <url-pattern>/Simulator</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Worker</display-name>
+    <servlet-name>Worker</servlet-name>
+    <servlet-class>com.revevol.simulation.Servlet.Worker</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Worker</servlet-name>
+    <url-pattern>/worker</url-pattern>
+  </servlet-mapping>
+  </web-app>
